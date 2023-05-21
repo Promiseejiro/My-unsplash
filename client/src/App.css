@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+button,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+progress {
+  background-color: #fff;
+  -webkit-appearance: none;
+  accent-color: green;
+  border: 2px solid #3b82f6;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  height: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #fff;
+}
+progress::-webkit-progress-value {
+  background-color: #3b82f6;
+}
+progress::-moz-progress-bar {
+  background-color: #fff;
+}
+
+.main_container {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 600px) {
+  .main_container {
+    width: 500px;
+  }
+}
