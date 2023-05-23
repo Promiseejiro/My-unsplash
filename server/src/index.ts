@@ -12,7 +12,7 @@ app.use(cors());
 //routes
 app.use("/",router)
 app.listen(port, (): void => {
-  connectDb("mongodb+srv://my-unsplash:4128@cluster0.zr1pucn.mongodb.net/");
+  connectDb();
   console.log("app is listenig on port 2000");
 });
 
