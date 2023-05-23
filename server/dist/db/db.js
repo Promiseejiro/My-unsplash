@@ -11,7 +11,7 @@ const connectDb = (url) => {
         console.log("database connected successfully");
     })
         .catch((error) => {
-        console.log("erro during connection");
+        console.log(error);
     });
 };
 exports.default = connectDb;

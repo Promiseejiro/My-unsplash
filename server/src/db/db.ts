@@ -6,14 +6,14 @@ interface Idb {
   useFindAndModify: boolean;
   useUnifiedTopology: boolean;
 }
-const connectDb = (url: string) => {
+const connectDb = (url: any) => {
   return mongoose
     .connect(url, {})
     .then(() => {
       console.log("database connected successfully");
     })
     .catch((error) => {
-      console.log("erro during connection");
+      console.log(error);
     });
 };
 export default connectDb;
