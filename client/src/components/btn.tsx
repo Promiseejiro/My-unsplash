@@ -1,11 +1,10 @@
-interface text{
-  title: String;
+interface props{
+  text: String;
   onclickHandler:any
 }
-
-function Btn ({title,onclickHandler}:text){
+function Btn ({text,onclickHandler}:props){
   return (
-<button  className="bg-blue-500  hover:bg-blue-700 text-white font-[400] py-2 px-4 rounded" onClick={onclickHandler}> {title}</button>
+<button  className="bg-blue-500  hover:bg-blue-700 text-white font-[400] p-1 rounded-[12px] flex-6" onClick={onclickHandler}> {text}</button>
 )
 }
 export default Btn

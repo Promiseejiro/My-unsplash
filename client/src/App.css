@@ -22,6 +22,7 @@ h6,
 p,
 label,
 button,
+input,
 a {
   font-family: "Poppins", sans-serif;
 }
@@ -47,13 +48,39 @@ progress::-moz-progress-bar {
   background-color: #fff;
 }
 
-.main_container {
-  width: 100%;
-  max-width: 100%;
-}
+
 
 @media (min-width: 600px) {
-  .main_container {
-    width: 500px;
-  }
+
+}
+
+.photo-container{
+  position: relative;
+ border-radius: 10px ;
+}
+
+.photo-overlay{
+  position: absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  z-index: 2;
+  background-color: rgba(0,0,0,.4);
+  border-radius: 10px ;
+}
+
+.delete-btn{
+  position: absolute;
+  right:1em;
+  top:1em;
+  z-index: 3;
+}
+
+.photo-title{
+  position: absolute;
+  bottom: 1rem;
+  left:1rem;
+  z-index: 3;
+  color:#fff;
 }
