@@ -17,19 +17,34 @@ const photo_model_1 = __importDefault(require("../modal/photo_model"));
 const cloudinarySetup_1 = __importDefault(require("../utils/cloudinarySetup"));
 const addPhoto = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;
-    const { id, label, filepath } = yield req.body;
-    const cloudinaryResponse = yield cloudinarySetup_1.default.uploader.upload((_a = req.file) === null || _a === void 0 ? void 0 : _a.path, {
-        folder: "my-unsplash",
-        resource_type: "auto",
-    });
-    console.log(cloudinaryResponse);
-    const newPhoto = new photo_model_1.default({
-        label: label,
-        filepath: cloudinaryResponse.secure_url
-    });
-    if (newPhoto) {
-        newPhoto.save();
-        res.status(200).send(newPhoto);
+    try {
+        if (req.file) {
+            const { label } = yield req.body;
+            const cloudinaryResponse = yield cloudinarySetup_1.default.uploader.upload((_a = req.file) === null || _a === void 0 ? void 0 : _a.path, {
+                folder: "my-unsplash",
+                resource_type: "auto",
+            });
+            console.log(cloudinaryResponse);
+            const newPhoto = new photo_model_1.default({
+                label: label,
+                filepath: cloudinaryResponse.secure_url
+            });
+            if (newPhoto) {
+                newPhoto.save();
+                res.status(200).send(newPhoto);
+            }
+        }
+        else {
+            const { label, filepath } = yield req.body;
+            const newPhoto = new photo_model_1.default({
+                label: label, filepath: filepath
+            });
+            console.log(newPhoto);
+            res.send(newPhoto);
+        }
+    }
+    catch (error) {
+        console.log(error);
     }
 });
 exports.addPhoto = addPhoto;

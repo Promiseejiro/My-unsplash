@@ -15,3 +15,4 @@ app.listen(port, (): void => {
   connectDb("mongodb+srv://my-unsplash:4128@cluster0.zr1pucn.mongodb.net/");
   console.log("app is listenig on port 2000");
 });
+
