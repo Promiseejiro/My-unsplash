@@ -1,19 +1,17 @@
 import React,{useEffect,useState} from "react";
-
+//components
 import Photo from "./photo";
+//dependencies
 import axios from "axios";
-const Photos =()=>{
-  const fetchData =async()=>{
-    const data =await axios.get("https://unsplash-qoun.onrender.com/photos");
-    setPhotos(data.data)
-  }
-  const [photos,setPhotos] =useState([])
-  useEffect(()=>{
-    fetchData()
-  },[])
+interface PhotosIn{
+  photos:any;
+  deletehandler:any
+}
+
+const Photos =({photos,deletehandler}:PhotosIn)=>{
   return(<div>
   {
-photos.map((photo:any)=>(<Photo photoObjects={photo}/>))  
+photos.map((photo:any)=>(<Photo photoObjects={photo}  deletehandler={deletehandler}/>))  
   }
   </div>
   )
