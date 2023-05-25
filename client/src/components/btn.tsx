@@ -1,10 +1,27 @@
+import ClipLoader from "react-spinners/ClipLoader";
 interface props{
   text: String;
-  onclickHandler:any
+  onclickHandler:any;
+  bgcolor: any;
+ loading:boolean;
+ disabled:boolean
+ // color: String;
+  
 }
-function Btn ({text,onclickHandler}:props){
+function Btn ({text,onclickHandler,bgcolor,loading,disabled}:props){
   return (
-<button  className="bg-blue-500  hover:bg-blue-700 text-white font-[400] p-1 rounded-[12px] flex-6" onClick={onclickHandler}> {text}</button>
+<button  disabled={disabled} className={`text-[#f4f4f4]  hover:bg-blue-700 text-white font-[400] text-center p-2 rounded-[5px] flex items-center `} onClick={onclickHandler} style={
+  {backgroundColor:`${bgcolor}`,
+  opacity:disabled ? ".4":"1"
+  }
+}
+><ClipLoader
+        color={"#fff"}
+       loading={loading}
+        size={15}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+    className="mr-1"  /> {text}</button>
 )
 }
 export default Btn

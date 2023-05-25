@@ -11,6 +11,7 @@ const app = express();
 //medewares
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
+app.use(express.json());
 //routes
 app.use("/", router);
 app.listen(port, async () => {
