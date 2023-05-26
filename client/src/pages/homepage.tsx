@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from "react"
 //components
-import Header from "../components/header";
 import Btn from "../components/btn";
 import Photos from "../components/photos"
 import SearchBar from "../components/search-bar"
@@ -17,6 +16,7 @@ interface Search{
 }
 
 const Homepage =()=>{
+  const baseurl  ="https://unsplash-qoun.onrender.com"
   const [showModal,setModal]=useState(false)
   const [photoInfo,setPhotoInfo]=useState<PhotoInfo>({
     photos:[],
@@ -33,22 +33,24 @@ const Homepage =()=>{
   fetchData()
   }
   
-  const handleSearch=(e:any)=>{
-    setSearch({...search,value:e.target.value});
+  const handleSearch=(name: string,value: string)=>{
+    setSearch({...search,value: value});
   }
 
  const deletehandler=async(id: String)=>{
-   await axios.delete(`http://localhost:2000/${id}`);
+ const res=  await axios.delete(`${baseurl}/${id}`);
    fetchData()
+   return res
  }
  
  const fetchData =async()=>{
-   const url =`http://localhost:2000/photos?search=${search.value}`
+   const url =`${baseurl}/photos?search=${search.value}`
     const data =await axios.get(url);
     if(data.data){
     }
  setPhotoInfo({...photoInfo,photos:data.data})
   }
+  
  useEffect(()=>{
    fetchData()
  },[search])
@@ -62,7 +64,7 @@ const Homepage =()=>{
     <div className="logo"></div>
     <div className="relative header flex items-center justify-between w-full px-2 my-4 ">
     <SearchBar onchange={handleSearch} name="search"label="Search by name"/>
-<Btn text="Add photo" onclickHandler={showAddModalHadler} disabled={false} bgcolor="green"loading={false}/>
+<Btn text="Add photo" onclickHandler={showAddModalHadler} disabled={false} bgcolor="green"loading={false}color={`#fff`} borderRadius={5} bordercolor="green" />
 </div>
 
     <div className="search-bar"></div>

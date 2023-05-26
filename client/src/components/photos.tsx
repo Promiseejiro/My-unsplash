@@ -1,8 +1,6 @@
-import React,{useEffect,useState} from "react";
 //components
 import Photo from "./photo";
 //dependencies
-import axios from "axios";
 interface PhotosIn{
   photos:any;
   deletehandler:any
