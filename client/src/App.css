@@ -4,7 +4,6 @@
   border: none;
 }
 
-
 h1,
 h2,
 h3,
@@ -19,41 +18,40 @@ a {
   font-family: "Poppins", sans-serif;
 }
 @media (min-width: 600px) {
-
 }
 
-.photo-container{
+.photo-container > div {
+  border-radius: 10px;
+  margin-bottom: 2rem;
   position: relative;
- border-radius: 10px ;
- margin-bottom: 2rem;
 }
 
-.photo-overlay{
+.photo-overlay {
   position: absolute;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   z-index: 2;
-  background-color: rgba(0,0,0,.4);
-  border-radius: 10px ;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
-.delete-btn{
+.delete-btn {
   position: absolute;
-  right:1em;
-  top:1em;
+  right: 1em;
+  top: 1em;
   z-index: 3;
 }
 
-.photo-title{
+.photo-title {
   position: absolute;
   bottom: 1rem;
-  left:1rem;
+  left: 1rem;
   z-index: 3;
-  color:#fff;
+  color: #fff;
 }
 
-.modal{
-  z-index:5;
+.modal {
+  z-index: 5;
 }
