@@ -88,7 +88,7 @@ const AddPhoto =({hideAddmodalHandler}:Func)=>{
     <label className="mt-2">{"Photo URL"}</label>
   {newPhoto.uploadFilepath &&
     <p>
-    ${newPhoto.uploadFilepath}
+    {newPhoto.uploadFilepath}
    </p>
   }
     {!newPhoto.uploadFilepath && (
