@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Image uploader</h1>
+<h1 align="center">My Unsplash</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://file-uploader-eta.vercel.app/">
+    <a href="https://my-unsplash-promiseejiro.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://file-uploader-eta.vercel.app/">
+    <a href="https://my-unsplash-promiseejiro.vercel.app/">
       Solution
     </a>
     <span> | </span>
@@ -54,7 +54,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Promiseejiro/File-Uploader
+$ git clone https://github.com/Promiseejiro/My-unsplash
 
 # Install dependencies
 to run server
@@ -81,5 +81,5 @@ $ npm start
 ## Contact
 
 
-- GitHub [@Promiseejiro](hhttps://github.com/Promiseejiro/)
+- GitHub [@Promiseejiro](https://github.com/Promiseejiro/)
 - Twitter [@Promiseejiro4](https://twitter.com/promiseejiro4)
