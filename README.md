@@ -40,7 +40,7 @@
 - [nodejs and Express](https://nodejs.org/)
 
 ## Features
--[Add photo either by selecting or pasting photo url]()
+- [Add photo either by selecting or pasting photo url]()
 - [Delete photo]()
 - [Api photo search]()
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
