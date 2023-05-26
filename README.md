@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Image uploader</h1>
+<h1 align="center">My Unsplash</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://file-uploader-eta.vercel.app/">
+    <a href="https://my-unsplash-promiseejiro.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://file-uploader-eta.vercel.app/">
+    <a href="https://my-unsplash-promiseejiro.vercel.app/">
       Solution
     </a>
     <span> | </span>
@@ -27,7 +27,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://res.cloudinary.com/dxqg5hify/image/upload/v1685093885/my-unsplash/wb16ak8kx0spbn9bbtb9.jpg)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
@@ -54,7 +54,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Promiseejiro/File-Uploader
+$ git clone https://github.com/Promiseejiro/My-unsplash
 
 # Install dependencies
 to run server
@@ -81,5 +81,5 @@ $ npm start
 ## Contact
 
 
-- GitHub [@Promiseejiro](hhttps://github.com/Promiseejiro/)
+- GitHub [@Promiseejiro](https://github.com/Promiseejiro/)
 - Twitter [@Promiseejiro4](https://twitter.com/promiseejiro4)
