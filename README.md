@@ -29,7 +29,6 @@
 
 ![screenshot](https://res.cloudinary.com/dxqg5hify/image/upload/v1685093885/my-unsplash/wb16ak8kx0spbn9bbtb9.jpg)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 
 ### Built With
@@ -38,10 +37,12 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 - [React](https://reactjs.org/)
 - [Tailwind](https://tailwindcss.com/)
-- nodejs and Express
+- [nodejs and Express](https://nodejs.org/)
 
 ## Features
-
+[Add photo either by selecting or pasting photo url]()
+- [Delete photo]()
+- [Api photo search]()
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx) was to build an application to complete the given user stories.
